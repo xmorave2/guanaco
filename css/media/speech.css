@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* speech media style */
+body {
+	voice-family: female;
+	speak: normal;
+}
+p {
+	voice-family: female;
+	pause-after: 1s;
+	speak: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+	voice-family: male;
+	speak: normal;
+}
+a {
+	voice-family: male;
+	pause-after: 1500ms;
+	speak: normal;
+}
+table {
+	speak-header: once;
+}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* general styles */
+
+.right { float: right; }
+.left { float: left; }
+
+ol { list-style-type: decimal; margin-left: 2.62em;}
+ol ol { list-style-type: upper-roman; }
+ol ol ol { list-style-type: lower-alpha; }
+

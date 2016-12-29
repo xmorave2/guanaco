@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/*
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="media/speech.css" type="text/css" media="speech" />
+    <link rel="stylesheet" href="css/braille.css" type="text/css" media="braille, embossed" />
+    <link rel="stylesheet" href="media/handheld.css" type="text/css" media="handheld" />
+    <link rel="stylesheet" href="css/tty.css" type="text/css" media="tty" />
+
+*/
+
+@import url("./reset.css");
+@import url("./typography.css") screen, projection;
+@import url("./general.css") screen, projection;
+@import url("./media/speech.css") speech;
+@import url("./print.css") print;
+
+
+/* if you want diagnostic any problems */
+@import url("./debug.css");

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* style for typography */
+html { font-size: 100.01%;  } /* is this important? */
+body {
+	line-height: 1.62em;
+	padding: 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; line-height: 1.62em; }
+h1 { font-size: 4.25em;}
+h2 { font-size: 2.62em;}
+h3 { font-size: 1.62em;}
+h4 { font-size: 1em;}
+h5 { font-size: 0.62em;}
+h6 { font-size: 0.38em;}
+
+p { font-size: 1em; margin: 1.3em 0; text-indent: 2.3em;}
+input, select, th, td { font-size: 1em; }
+
+a, a:hover, a:visited {
+/*	text-decoration: none;*/
+	color: blue;
+	border-bottom: 1px solid blue;
+}
+a:hover { color: navy; border-bottom-color: navy;}
+a:visited {	color: purple; border-bottom-color: purple; }
+
+dl { margin-left: 1.3em; }
+dt { font-style: italic; }
+dd { padding-left: 2.3em; }

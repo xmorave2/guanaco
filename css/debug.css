@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* based on Eric Meyer article "Diagnostic Styling" */
+
+/* no old elements, only semantic elements */
+font, center, b, big, i, applet, basefont, frame, frameset,
+isindex, s, small, strike, u, dir, noframes, xmp,
+
+/* inline styles is bad */
+*[style],
+
+/* is good to fill alt */
+img[alt=""], img:not([alt]),
+
+/* is good to summary the table */
+table[summary=""], table:not([summary]),
+
+/* kontrola odkazù */
+a[href]:not([title]), a[title=""], a[href="#"], a[href=""]
+
+{outline: 3px solid red; display: inline; visibility: visible;}
+
+/* vysvìtlivky co je špatnì */
+*:after, *:before {
+	font-style: italic;
+	font-weight: normal;
+	font-family: serif;
+	text-decoration: none;
+	background-color: #FFFF99;
+	color: red;
+	padding: 0 0.3em;
+	border: 0;
+}
+
+i:after, font:after, center:after, b:after, big:after, applet:after, basefont:after,
+frame:after, frameset:after, s:after, small:after, strike:after, u:after,
+dir:after, noframes:after, xmp:after
+{
+	content: "deprecated element";
+}
+
+*[style]:after {
+	content: "inline style";
+}
+
+img[alt=""]:after, img:not([alt]):after {
+  content: "missing alt";
+}
+
+table[summary=""]:after, table:not([summary]):after {
+  content: "missing summary";
+}
+
+a[href]:not([title]):after, a[title=""]:after{
+  content: "missing title";
+}
+
+a[href="#"]:before, a[href=""]:before {
+  content: "missing href";
+}
